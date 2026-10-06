@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+@theme {
+  --breakpoint-sm: 30rem;
+  --color-gbc-navy: #213454;
+  --color-gbc-steel: #34729A;
+  --color-gbc-sky: #84BED3;
+  --color-gbc-cyan: #4099C9;
+  --color-gbc-blue: #1072AB;
+}
+
 @theme inline {
   --font-sans: var(--font-montserrat);
 }
