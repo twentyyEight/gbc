@@ -1,7 +1,8 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
 import { IoMenu, IoClose } from "react-icons/io5";
 
 const links = [
@@ -15,6 +16,39 @@ const links = [
 export default function Navbar() {
 
     const [isOpen, setIsOpen] = useState(false);
+    const [hasBackground, setHasBackground] = useState(false);
+    const navRef = useRef(null);
+    const pathname = usePathname();
+
+    useEffect(() => {
+        const hero = document.querySelector(".hero");
+
+        function updateBackground() {
+            if (!hero) {
+                setHasBackground(true);
+                return;
+            }
+
+            const { top, height } = hero.getBoundingClientRect();
+            const threshold = top + height * 0.25;
+
+            setHasBackground(
+                threshold <= navRef.current.getBoundingClientRect().top
+            );
+        }
+
+        const observer = new ResizeObserver(updateBackground);
+        if (hero) observer.observe(hero);
+        window.addEventListener("scroll", updateBackground, { passive: true });
+        window.addEventListener("resize", updateBackground);
+        updateBackground();
+
+        return () => {
+            observer.disconnect();
+            window.removeEventListener("scroll", updateBackground);
+            window.removeEventListener("resize", updateBackground);
+        };
+    }, [pathname]);
 
     function closeMenu() {
         setIsOpen(false);
@@ -43,10 +77,10 @@ export default function Navbar() {
     }, [isOpen]);
 
     return (
-        <nav className="absolute inset-x-0 top-4 z-50 flex justify-center" aria-label="Navegación principal">
+        <nav ref={navRef} className="fixed inset-x-0 top-4 z-50 flex justify-center" aria-label="Navegación principal">
 
             {/* PC */}
-            <ul className="hidden list-none items-center rounded-full bg-white px-3 py-2 text-xl text-black font-medium md:flex md:text-base lg:text-[1.2rem]">
+            <ul className={`hidden list-none items-center rounded-full px-3 py-1 text-xl font-medium md:flex md:text-base lg:text-[1.1rem] xl:text-[1.2rem] transition-colors duration-300 motion-reduce:transition-none ${hasBackground ? "bg-white text-black" : "bg-transparent text-white"}`}>
 
                 {links.map(([label, href]) => (
                     <li
@@ -63,7 +97,7 @@ export default function Navbar() {
 
             {/* Mobile */}
             <button
-                className="absolute right-5 cursor-pointer border-0 bg-transparent text-white md:hidden"
+                className={`absolute right-5 cursor-pointer border-0 rounded-full transition-colors duration-300 motion-reduce:transition-none md:hidden ${hasBackground ? "bg-white text-black" : "bg-transparent text-white"}`}
                 type="button"
                 aria-label="Abrir menú"
                 aria-expanded={isOpen}
@@ -75,7 +109,6 @@ export default function Navbar() {
             <div
                 className={`${isOpen ? "transform-[translateY(0)]" : "transform-[translateY(-100%)]"} fixed inset-0 flex flex-col items-center justify-center overflow-y-auto bg-gbc-blue px-5 py-6 text-white h-svh min-h-142 min-w-[320px] transition-transform duration-300 ease-in-out motion-reduce:transition-none md:hidden`}
                 inert={!isOpen}
-                aria-hidden={!isOpen}
                 aria-label="Menú de navegación"
             >
                 <button

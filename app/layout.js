@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
       lang="es"
       className={`${montserrat.variable} h-full antialiased`}
     >
-      <body>
+      <body className={montserrat.className}>
         <Navbar />
         {children}
       </body>
