@@ -1,0 +1,10 @@
+[
+  { "image": "/inicio/clientes/agental-logo.png", "name": "Agental", "web": "https://agental.cl/" },
+  { "image": "/inicio/clientes/agunsa-logo.png", "name": "Agunsa", "web": "https://agunsa.com/" },
+  { "image": "/inicio/clientes/ambipar-logo.png", "name": "Ambipar Response", "web": "https://ambipar.com/latam/" },
+  { "image": "/inicio/clientes/aqua-chile-logo.png", "name": "AquaChile", "web": "https://es.aquachile.com/" },
+  { "image": "/inicio/clientes/asi-group-logo.png", "name": "ASI Group LATAM", "web": "https://latam.asi-group.com/" },
+  { "image": "/inicio/clientes/ian-taylor-logo.png", "name": "Ian Taylor", "web": "https://www.iantaylor.com/es/chile/" },
+  { "image": "/inicio/clientes/oneka-logo.png", "name": "Oneka", "web": "https://www.onekawater.com/es/inicio/" },
+  { "image": "/inicio/clientes/skyring-marine-logo.png", "name": "Skyring Marine", "web": "https://www.skyringmarine.cl/" }
+]

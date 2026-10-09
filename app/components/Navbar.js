@@ -97,17 +97,17 @@ export default function Navbar() {
 
             {/* Mobile */}
             <button
-                className={`absolute right-5 cursor-pointer border-0 rounded-full transition-colors duration-300 motion-reduce:transition-none md:hidden ${hasBackground ? "bg-white text-black" : "bg-transparent text-white"}`}
+                className={`absolute right-5 cursor-pointer border-0 rounded-md transition-colors duration-300 motion-reduce:transition-none md:hidden ${hasBackground ? "bg-white text-black" : "bg-transparent text-white"}`}
                 type="button"
                 aria-label="Abrir menú"
                 aria-expanded={isOpen}
                 onClick={() => setIsOpen(true)}
             >
-                <IoMenu className="w-13 h-auto" />
+                <IoMenu className="w-12 h-auto" />
             </button>
 
             <div
-                className={`${isOpen ? "transform-[translateY(0)]" : "transform-[translateY(-100%)]"} fixed inset-0 flex flex-col items-center justify-center overflow-y-auto bg-gbc-blue px-5 py-6 text-white h-svh min-h-142 min-w-[320px] transition-transform duration-300 ease-in-out motion-reduce:transition-none md:hidden`}
+                className={`${isOpen ? "transform-[translateY(0)]" : "transform-[translateY(-100%)]"} fixed inset-0 flex flex-col items-center justify-center overflow-y-auto bg-gbc-blue px-5 py-6 text-white h-vh min-w-[320px] transition-transform duration-300 ease-in-out motion-reduce:transition-none md:hidden`}
                 inert={!isOpen}
                 aria-label="Menú de navegación"
             >
