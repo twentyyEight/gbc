@@ -1,0 +1,191 @@
+[
+  {
+    "year": 2021,
+    "mes": "Agosto",
+    "empresa": "OPES LTDA",
+    "trabajos": [
+      "Inspección con ROV",
+      "Apoyo con ROV en emisario"
+    ],
+    "lugar": "Valparaíso"
+  },
+  {
+    "year": 2021,
+    "mes": "Noviembre",
+    "empresa": "IAN TAYLOR S.A",
+    "trabajos": [
+      "Servicio de limpieza de casco, hélices y timón"
+    ],
+    "lugar": "Quintero"
+  },
+  {
+    "year": 2021,
+    "mes": "Diciembre",
+    "empresa": "Salinas y Salinas LTDA",
+    "trabajos": [
+      "Instalación de Cofferdam en rejillas de aspiración de agua"
+    ],
+    "lugar": "Quintero"
+  },
+  {
+    "year": 2022,
+    "mes": "Enero",
+    "empresa": "AGENTAL",
+    "trabajos": [
+      "Inspección a sistema de propulsión"
+    ],
+    "lugar": "Quintero"
+  },
+  {
+    "year": 2022,
+    "mes": "Febrero",
+    "empresa": "Salinas y Salinas LTDA",
+    "trabajos": [
+      "Inspección submarina",
+      "Instalación de boyas de fondeo"
+    ],
+    "lugar": "Quintero"
+  },
+  {
+    "year": 2022,
+    "mes": "Febrero",
+    "empresa": "Skyring Marine LTDA",
+    "trabajos": [
+      "Servicios de inspección submarina con ROV en PVSA"
+    ],
+    "lugar": "Ventanas"
+  },
+  {
+    "year": 2022,
+    "mes": "Marzo",
+    "empresa": "Skyring Marine LTDA",
+    "trabajos": [
+      "Servicios de toma de muestra de fondo marino con equipo ROV en PVSA"
+    ],
+    "lugar": "Ventanas"
+  },
+  {
+    "year": 2022,
+    "mes": "Abril",
+    "empresa": "AGENTAL",
+    "trabajos": [
+      "Servicios submarinos de limpieza de cascos"
+    ],
+    "lugar": "Quintero"
+  },
+  {
+    "year": 2022,
+    "mes": "Mayo",
+    "empresa": "Skyring Marine LTDA",
+    "trabajos": [
+      "Servicios de toma de muestra de fondo marino con equipo ROV en PVSA"
+    ],
+    "lugar": "Ventanas"
+  },
+  {
+    "year": 2022,
+    "mes": "Agosto",
+    "empresa": "AGENTAL",
+    "trabajos": [
+      "Retiro de eje de limera",
+      "Instalación de timón y eje de limera"
+    ],
+    "lugar": "Quintero"
+  },
+  {
+    "year": 2023,
+    "mes": "Abril",
+    "empresa": "AGENTAL",
+    "trabajos": [
+      "Instalación de sello en caja de mar",
+      "Limpieza de sistema de propulsión"
+    ],
+    "lugar": "Quintero"
+  },
+  {
+    "year": 2023,
+    "mes": "Mayo",
+    "empresa": "Salinas y Salinas LTDA",
+    "trabajos": [
+      "Instalación e inspección de fondeo",
+      "Desbancamiento de maniobras de fondeo y pesos muertos",
+      "Traslado y reposicionamiento de pesos muertos"
+    ],
+    "lugar": "Quintero"
+  },
+  {
+    "year": 2023,
+    "mes": "Septiembre",
+    "empresa": "AGUNSA",
+    "trabajos": [
+      "Inspección y retiro de espía acorbatada en hélice de babor"
+    ],
+    "lugar": "Quintero"
+  },
+  {
+    "year": 2023,
+    "mes": "Septiembre",
+    "empresa": "AGUNSA",
+    "trabajos": [
+      "Reparación de fondeo",
+      "Inspección y reparación de fondeo de embarcación Alfa Perseus"
+    ],
+    "lugar": "Quintero"
+  },
+  {
+    "year": 2023,
+    "mes": "Octubre",
+    "empresa": "AGENTAL",
+    "trabajos": [
+      "Servicio de buceo",
+      "Retiro de acorbatamiento de lancha Río Rapel"
+    ],
+    "lugar": "Quintero"
+  },
+  {
+    "year": 2023,
+    "mes": "Diciembre",
+    "empresa": "AGENTAL",
+    "trabajos": [
+      "Limpieza de casco de embarcación Río Maipo"
+    ],
+    "lugar": "Quintero"
+  },
+  {
+    "year": 2023,
+    "mes": "Diciembre",
+    "empresa": "SERVICE STATION SPA",
+    "trabajos": [
+      "Búsqueda y recuperación de dron y cámara"
+    ],
+    "lugar": "Portillo"
+  },
+  {
+    "year": 2024,
+    "mes": "Enero",
+    "empresa": "AGENTAL",
+    "trabajos": [
+      "Inspección submarina de sistema de propulsión"
+    ],
+    "lugar": "Quintero"
+  },
+  {
+    "year": 2024,
+    "mes": "Agosto",
+    "empresa": "AMBIPAR",
+    "trabajos": [
+      "Servicios submarinos",
+      "Instalación de tapón para obturación de tubería, carretera ruta 5 norte"
+    ],
+    "lugar": "Los Vilos"
+  },
+  {
+    "year": 2026,
+    "mes": "Febrero",
+    "empresa": "CHILE SERVICES",
+    "trabajos": [
+      "Rebusqueda de ancla con equipo ROV"
+    ],
+    "lugar": "Mejillones"
+  }
+]

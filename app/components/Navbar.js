@@ -77,27 +77,48 @@ export default function Navbar() {
     }, [isOpen]);
 
     return (
-        <nav ref={navRef} className="fixed inset-x-0 top-4 z-50 flex justify-center" aria-label="Navegación principal">
+        <nav ref={navRef} className="fixed inset-x-0 top-0 z-50 flex justify-center" aria-label="Navegación principal">
 
             {/* PC */}
-            <ul className={`hidden list-none items-center rounded-full px-3 py-1 text-xl font-medium md:flex md:text-base lg:text-[1.1rem] xl:text-[1.2rem] transition-colors duration-300 motion-reduce:transition-none ${hasBackground ? "bg-white text-black" : "bg-transparent text-white"}`}>
+            <div className={`hidden w-full items-center justify-between gap-4 px-12 py-3.5 md:flex transition-colors duration-300 motion-reduce:transition-none text-white lg:px-16 ${hasBackground ? "bg-gbc-blue" : "bg-transparent"}`}>
+                <Link href="/" className="shrink-0" aria-label="Grupo Buzos Comerciales, inicio">
+                    <Image
+                        src="/gbc-letras.png"
+                        alt="Grupo Buzos Comerciales Logo"
+                        width={160}
+                        height={100}
+                        className="h-10 w-auto"
+                    />
+                </Link>
+                <ul className="flex list-none items-center justify-end font-medium">
 
-                {links.map(([label, href]) => (
-                    <li
-                        key={label}
-                        className={`px-3 py-1 transition-colors hover:bg-gbc-sky hover:text-gbc-navy ${label === "INICIO" ? "rounded-l-2xl rounded-r-md" : label === "CONTACTO" ? "rounded-r-2xl rounded-l-md" : "rounded-md"}`}
-                    >
-                        <Link href={href}>
-                            {label}
-                        </Link>
-                    </li>
-                ))}
+                    {links.map(([label, href]) => (
+                        <li
+                            key={label}
+                            className={`px-3 py-1 transition-colors hover:bg-gbc-sky hover:text-gbc-navy rounded-lg`}
+                        >
+                            <Link href={href} className="text-[1.2rem]!">
+                                {label}
+                            </Link>
+                        </li>
+                    ))}
 
-            </ul>
+                </ul>
+            </div>
 
             {/* Mobile */}
+            <div className={`flex w-full items-center justify-between gap-4 px-5 py-2 text-white transition-colors duration-300 motion-reduce:transition-none md:hidden ${hasBackground ? "bg-gbc-blue" : "bg-transparent"}`}>
+                <Link href="/" className="shrink-0" aria-label="Grupo Buzos Comerciales, inicio">
+                    <Image
+                        src="/gbc-letras.png"
+                        alt="Grupo Buzos Comerciales Logo"
+                        width={160}
+                        height={100}
+                        className="h-8 w-auto"
+                    />
+                </Link>
             <button
-                className={`absolute right-5 cursor-pointer border-0 rounded-md transition-colors duration-300 motion-reduce:transition-none md:hidden ${hasBackground ? "bg-white text-black" : "bg-transparent text-white"}`}
+                className="shrink-0 cursor-pointer rounded-md border-0 bg-transparent text-white"
                 type="button"
                 aria-label="Abrir menú"
                 aria-expanded={isOpen}
@@ -105,6 +126,7 @@ export default function Navbar() {
             >
                 <IoMenu className="w-12 h-auto" />
             </button>
+            </div>
 
             <div
                 className={`${isOpen ? "transform-[translateY(0)]" : "transform-[translateY(-100%)]"} fixed inset-0 flex flex-col items-center justify-center overflow-y-auto bg-gbc-blue px-5 py-6 text-white h-vh min-w-[320px] transition-transform duration-300 ease-in-out motion-reduce:transition-none md:hidden`}
@@ -123,13 +145,13 @@ export default function Navbar() {
 
                 <div className="flex shrink-0 flex-col items-center gap-[10vh]">
 
-                    <ul className="flex list-none flex-col items-center gap-2 text-center text-[clamp(1.8rem,8vw,2.5rem)] sm:gap-5 sm:text-[2.5rem]">
+                    <ul className="flex list-none flex-col items-center gap-5 text-center">
 
                         {links.map(([label, href]) => (
 
                             <li key={label}>
                                 <Link
-                                    className="transition-opacity hover:opacity-75"
+                                    className="transition-opacity hover:opacity-75 text-[clamp(1.8rem,8vw,2.5rem)]! sm:text-[2.5rem]!"
                                     href={href}
                                     onClick={closeMenu}
                                 >{label}</Link>

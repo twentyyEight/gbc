@@ -1,0 +1,39 @@
+import Image from "next/image";
+
+export default function ExperienciaCard({ img, mes, empresas, trabajos = [], ubicacion }) {
+    const nombresEmpresas = Array.isArray(empresas) ? empresas.join(", ") : empresas;
+    const listaTrabajos = Array.isArray(trabajos) ? trabajos : [trabajos];
+
+    return (
+        <article className="flex w-full min-w-0 flex-col gap-3 lg:flex-row lg:items-start lg:gap-8">
+            <div className="relative aspect-video w-full shrink-0 overflow-hidden rounded-lg bg-[#d9d9d9] lg:order-last lg:w-[42%]">
+                {img && img !== "/" && (
+                    <Image
+                        src={img}
+                        alt={`Trabajo realizado${nombresEmpresas ? ` para ${nombresEmpresas}` : ""}${ubicacion ? ` en ${ubicacion}` : ""}`}
+                        fill
+                        sizes="(min-width: 1024px) 42vw, 100vw"
+                        className="object-cover"
+                    />
+                )}
+            </div>
+
+            <div className="min-w-0 flex-1 text-left">
+                <h3 className="text-lg font-semibold uppercase leading-tight text-gbc-blue lg:text-[1.7rem]">
+                    {mes}
+                </h3>
+                <p className="mt-1 font-medium uppercase leading-tight text-black lg:text-[1.3rem]!">
+                    {nombresEmpresas}
+                </p>
+                <ul className={`mt-2 space-y-1 text-base leading-tight text-neutral-500 lg:mt-3 lg:text-[1.3rem] ${listaTrabajos.length > 1 ? "list-disc pl-5 marker:text-gbc-sky" : "list-none"}`}>
+                    {listaTrabajos.map((trabajo, index) => (
+                        <li key={`${index}-${trabajo}`}>{trabajo}</li>
+                    ))}
+                </ul>
+                <p className="mt-3 font-medium leading-tight text-gbc-cyan lg:mt-4 lg:text-[1.3rem]!">
+                    {ubicacion}
+                </p>
+            </div>
+        </article>
+    );
+}

@@ -1,0 +1,124 @@
+[
+  {
+    "type": "rov",
+    "services": [
+      {
+        "name": "Inspección de hélices, timones y sistemas de propulsión",
+        "img": ""
+      },
+      {
+        "name": "Inspección de cascos de embarcaciones.",
+        "img": ""
+      },
+      {
+        "name": "Búsqueda y recuperación de objetos sumergidos",
+        "img": ""
+      },
+      {
+        "name": "Dragado fondos",
+        "img": ""
+      },
+      {
+        "name": "Dragado de lodos",
+        "img": ""
+      },
+      {
+        "name": "Recuperación en piscinas con aguas de proceso",
+        "img": ""
+      },
+      {
+        "name": "Muestra de fondo",
+        "img": ""
+      },
+      {
+        "name": "Muestras de sedimento, fango",
+        "img": ""
+      },
+      {
+        "name": "Fotografía y filmación submarina",
+        "img": ""
+      },
+      {
+        "name": "Búsqueda y recuperación de artefactos perdidos en fondos marinos",
+        "img": ""
+      },
+      {
+        "name": "Búsqueda de personas",
+        "img": ""
+      }
+    ]
+  },
+  {
+    "type": "buceo",
+    "services": [
+      {
+        "name": "Inspección de cadenas y sistemas de fondeo.",
+        "img": ""
+      },
+      {
+        "name": "Inspección de emisarios submarinos.",
+        "img": ""
+      },
+      {
+        "name": "Recuperación de equipos sumergidos.",
+        "img": ""
+      },
+      {
+        "name": "Búsqueda de elementos perdidos.",
+        "img": ""
+      },
+      {
+        "name": "Instalación de sistemas de fondeo",
+        "img": ""
+      },
+      {
+        "name": "Inspección de líneas de fondeo",
+        "img": ""
+      },
+      {
+        "name": "Mantenimiento e inspección de pilotes",
+        "img": ""
+      },
+      {
+        "name": "Medición de espesores",
+        "img": ""
+      },
+      {
+        "name": "Mantenimiento de defensas",
+        "img": ""
+      },
+      {
+        "name": "Mantenimiento e instalación de infraestructura portuaria",
+        "img": ""
+      },
+      {
+        "name": "Corte y soldadura submarina",
+        "img": ""
+      },
+      {
+        "name": "Protección catódica",
+        "img": ""
+      },
+      {
+        "name": "Defensa de enrocados",
+        "img": ""
+      },
+      {
+        "name": "Protección de aducciones",
+        "img": ""
+      },
+      {
+        "name": "Reparación de maniobras de fondeo",
+        "img": ""
+      },
+      {
+        "name": "Buceo en aguas contaminadas",
+        "img": ""
+      },
+      {
+        "name": "Buceo en plantas de tratamiento de aguas servidas",
+        "img": ""
+      }
+    ]
+  }
+]
