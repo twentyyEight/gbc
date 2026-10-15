@@ -81,7 +81,7 @@ export default function Equipos() {
                     </div>
                 </div>
             </section>
-            <section className="-mx-5 bg-gbc-cyan px-5 py-12 text-white md:-mx-12 md:px-12 lg:py-24 xl:-mx-20 xl:px-20" aria-labelledby="certificacion">
+            <section className="-mx-8 w-[calc(100%+4rem)] bg-gbc-cyan px-8 py-12 text-white md:-mx-12 md:w-[calc(100%+6rem)] md:px-12 lg:py-24 xl:-mx-20 xl:w-[calc(100%+10rem)] xl:px-20" aria-labelledby="certificacion">
                 <div className="mx-auto flex max-w-7xl flex-col items-center gap-10 lg:flex-row lg:gap-16">
                     <div className="relative order-first size-48 shrink-0 overflow-hidden rounded-full bg-white lg:order-last lg:size-72">
                         <Image

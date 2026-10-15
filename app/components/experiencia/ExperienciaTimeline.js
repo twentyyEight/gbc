@@ -12,11 +12,11 @@ export default function ExperienciaTimeline({ experiencias, etiqueta = "year" })
                 return (
                     <li key={`${experiencia.year}-${experiencia.mes}-${experiencia.empresa}-${index}`} className={`relative lg:grid lg:gap-x-4 lg:pb-8 lg:last:pb-0 ${mostrarMes ? "lg:grid-cols-[10rem_1.5rem_minmax(0,1fr)]" : "lg:grid-cols-[6rem_1.5rem_minmax(0,1fr)]"}`}>
                         {mostrarMes ? (
-                            <h3 className="hidden pt-1 text-right text-xl font-semibold uppercase text-gbc-blue lg:col-start-1 lg:row-start-1 lg:block">{experiencia.mes}</h3>
+                            <h3 className="hidden pt-1 text-right text-[1.2rem] font-semibold uppercase text-gbc-blue lg:col-start-1 lg:row-start-1 lg:block">{experiencia.mes}</h3>
                         ) : (
                             <>
                                 {index > 0 && mostrarYear && <span aria-hidden="true" className="mx-auto my-3 block h-12 w-0.5 bg-gbc-cyan lg:hidden" />}
-                                {mostrarYear && <p className="text-center font-semibold text-gbc-navy lg:col-start-1 lg:row-start-1 lg:pt-1 lg:text-left lg:text-[2rem]!">{experiencia.year}</p>}
+                                {mostrarYear && <p className="text-center font-semibold text-gbc-navy lg:col-start-1 lg:row-start-1 lg:pt-1 lg:text-left text-[2rem]!">{experiencia.year}</p>}
                                 <div aria-hidden="true" className="relative mx-auto mb-4 mt-3 h-12 w-0.5 bg-gbc-cyan lg:hidden">
                                     <span className="absolute -bottom-1 left-1/2 size-3 -translate-x-1/2 rounded-full bg-gbc-blue" />
                                 </div>

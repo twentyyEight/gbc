@@ -12,7 +12,7 @@
       },
       {
         "name": "Búsqueda y recuperación de objetos sumergidos",
-        "img": ""
+        "img": "/servicios/recuperacion-objetos-rov.jfif"
       },
       {
         "name": "Dragado fondos",
@@ -20,7 +20,7 @@
       },
       {
         "name": "Dragado de lodos",
-        "img": ""
+        "img": "/servicios/dragado-bio-reactor.PNG"
       },
       {
         "name": "Recuperación en piscinas con aguas de proceso",
@@ -28,7 +28,7 @@
       },
       {
         "name": "Muestra de fondo",
-        "img": ""
+        "img": "/servicios/toma-muestras-submarinas.jpg"
       },
       {
         "name": "Muestras de sedimento, fango",
@@ -36,14 +36,14 @@
       },
       {
         "name": "Fotografía y filmación submarina",
-        "img": ""
-      },
-      {
-        "name": "Búsqueda y recuperación de artefactos perdidos en fondos marinos",
-        "img": ""
+        "img": "/servicios/fotografia-filmacion-submarina.jpg"
       },
       {
         "name": "Búsqueda de personas",
+        "img": ""
+      },
+      {
+        "name": "Batimetría",
         "img": ""
       }
     ]
@@ -65,7 +65,7 @@
       },
       {
         "name": "Búsqueda de elementos perdidos.",
-        "img": ""
+        "img": "/servicios/recuperacion-objetos-buceo.jfif"
       },
       {
         "name": "Instalación de sistemas de fondeo",
@@ -81,7 +81,7 @@
       },
       {
         "name": "Medición de espesores",
-        "img": ""
+        "img": "/servicios/medicion-espesores.jfif"
       },
       {
         "name": "Mantenimiento de defensas",
@@ -93,7 +93,7 @@
       },
       {
         "name": "Corte y soldadura submarina",
-        "img": ""
+        "img": "/inicio/buzo-soldador.jpg"
       },
       {
         "name": "Protección catódica",
@@ -117,7 +117,7 @@
       },
       {
         "name": "Buceo en plantas de tratamiento de aguas servidas",
-        "img": ""
+        "img": "/servicios/retiro-mixer-2.PNG"
       }
     ]
   }

@@ -19,6 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="es"
+      data-scroll-behavior="smooth"
       className={`${montserrat.variable} h-full antialiased`}
     >
       <body className={montserrat.className}>

@@ -13,13 +13,27 @@
   --font-sans: var(--font-montserrat);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+#contacto {
+  scroll-margin-top: 6rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   font-family: var(--font-montserrat), sans-serif;
-  padding-inline: 1.25rem;
+  padding-inline: 2rem;
 }
 
 footer {
-  margin-inline: -1.25rem;
+  margin-inline: -2rem;
 }
 
 p, a {

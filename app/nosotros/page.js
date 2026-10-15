@@ -68,9 +68,9 @@ export default function Nosotros() {
             </section>
 
             {/* MISIÓN Y VISIÓN */}
-            <section className="-mx-5 mb-16 text-white md:-mx-12 xl:-mx-20" aria-label="Misión y visión">
-                <div className="bg-gbc-blue px-5 py-10 md:px-12 md:py-20 xl:px-20">
-                    <h2 className="mb-6 flex items-center gap-3 text-left! text-xl! font-medium text-white! after:hidden! lg:text-2xl!">
+            <section className="-mx-8 mb-16 w-[calc(100%+4rem)] text-white md:-mx-12 md:w-[calc(100%+6rem)] xl:-mx-20 xl:w-[calc(100%+10rem)]" aria-label="Misión y visión">
+                <div className="bg-gbc-blue px-8 py-10 md:px-12 md:py-20 xl:px-20">
+                    <h2 className="mb-6 flex items-center gap-3 text-left! text-[1.6rem]! font-medium text-white! after:hidden! lg:text-[2rem]!">
                         <span aria-hidden="true" className="h-px w-12 bg-white lg:w-20" />
                         MISIÓN
                     </h2>
@@ -81,8 +81,8 @@ export default function Nosotros() {
                         </div>
                     </div>
                 </div>
-                <div className="bg-gbc-cyan px-5 py-10 md:px-12 md:py-20 xl:px-20">
-                    <h2 className="mb-6 flex items-center gap-3 text-left! text-xl! font-medium text-white! after:hidden! lg:text-2xl!">
+                <div className="bg-gbc-cyan px-8 py-10 md:px-12 md:py-20 xl:px-20">
+                    <h2 className="mb-6 flex items-center gap-3 text-left! text-[1.6rem]! font-medium text-white! after:hidden! lg:text-[2rem]!">
                         <span aria-hidden="true" className="h-px w-12 bg-white lg:w-20" />
                         VISIÓN
                     </h2>
@@ -108,7 +108,7 @@ export default function Nosotros() {
                                 aria-expanded={selectedYear === year}
                                 aria-controls={`experiencias-${year}`}
                                 onClick={() => setSelectedYear(selectedYear === year ? null : year)}
-                                className={`relative flex w-full cursor-pointer items-center justify-center border-y border-neutral-300 px-4 py-2 text-xl lg:order-1 lg:mb-12 lg:rounded-md lg:border-0 lg:text-2xl lg:after:absolute lg:after:inset-x-0 lg:after:-bottom-2 lg:after:h-1 lg:after:rounded-full lg:after:content-[''] ${selectedYear === year ? "bg-gbc-sky/50 font-semibold text-gbc-blue lg:after:bg-gbc-blue" : "font-medium text-neutral-400 lg:after:bg-neutral-300"}`}
+                                className={`relative flex w-full cursor-pointer items-center justify-center border-y border-neutral-300 py-4 text-[1.5rem] lg:order-1 lg:mb-12 lg:rounded-md lg:border-0 lg:text-2xl lg:after:absolute lg:after:inset-x-0 lg:after:-bottom-2 lg:after:h-1 lg:after:rounded-full lg:after:content-[''] ${selectedYear === year ? "bg-gbc-sky/50 font-semibold text-gbc-blue lg:after:bg-gbc-blue" : "font-medium text-neutral-400 lg:after:bg-neutral-300"}`}
                             >
                                 {year}
                                 <MdOutlineKeyboardArrowRight

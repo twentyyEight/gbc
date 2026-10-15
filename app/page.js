@@ -9,6 +9,7 @@ import ExperienciaTimeline from "./components/experiencia/ExperienciaTimeline";
 import clientes from "./data/clientes.json";
 import servicios from "./data/servicios.json";
 import experiencias from "./data/experiencias.json";
+import cotizacionHref from "./data/cotizacion";
 import { LuCalendarDays } from "react-icons/lu"
 import { GiDivingHelmet } from "react-icons/gi";
 import { MdEmail } from "react-icons/md";
@@ -33,7 +34,7 @@ export default function Home() {
         <main className="grid gap-20 sm:gap-24 xl:gap-32">
 
             {/* BANNER */}
-            <section className="hero relative isolate overflow-hidden -mx-5 px-5 w-[calc(100%+2.5rem)] md:-mx-12 md:px-12 md:w-[calc(100%+6rem)] xl:-mx-20 xl:px-20 xl:w-[calc(100%+10rem)] md:aspect-video h-svh md:[@media(max-aspect-ratio:16/9)]:h-auto -scale-x-100 before:content-[''] before:absolute before:inset-0 before:-z-10 before:bg-[linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('/inicio/diving.png')] before:bg-center before:bg-no-repeat before:bg-cover md:before:scale-125 md:before:bg-position-[right_40%] md:before:origin-top-right">
+            <section className="hero relative isolate overflow-hidden -mx-8 px-8 w-[calc(100%+4rem)] md:-mx-12 md:px-12 md:w-[calc(100%+6rem)] xl:-mx-20 xl:px-20 xl:w-[calc(100%+10rem)] md:aspect-video h-svh md:[@media(max-aspect-ratio:16/9)]:h-auto -scale-x-100 before:content-[''] before:absolute before:inset-0 before:-z-10 before:bg-[linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('/inicio/diving.png')] before:bg-center before:bg-no-repeat before:bg-cover md:before:scale-125 md:before:bg-position-[right_40%] md:before:origin-top-right">
 
                 <div className="-scale-x-100 px-5 text-white text-center flex flex-col items-center justify-center h-full gap-3 md:items-start md:mt-5 md:w-[55%] md:ml-auto lg:gap-3 md:text-start xl:gap-4">
 
@@ -184,7 +185,7 @@ export default function Home() {
             </section>
 
             {/* CONTACTO */}
-            <section id="contacto" className="bg-gbc-navy text-white rounded-xl px-3 pb-3 pt-8 mb-5 md:flex md:flex-row md:p-6 lg:gap-6 lg:pl-8 xl:pl-10">
+            <section id="contacto" className="bg-gbc-navy text-white rounded-xl -mx-4 px-3 pb-3 pt-8 md:flex md:flex-row md:p-6 lg:gap-6 lg:pl-8 xl:pl-10">
 
                 <div className="flex flex-col gap-5 text-center md:text-start md:justify-center">
 
@@ -192,7 +193,7 @@ export default function Home() {
 
                     <p>Escríbenos por correo electrónico, cuéntanos sobre tus requerimientos y cotiza nuestros servicios.</p>
 
-                    <Link href="" className="bg-gbc-cyan text-white flex py-2 text-[1.3rem] rounded-xl font-semibold justify-center items-center gap-[2vw] md:w-fit md:px-4 md:gap-3 xl:text-[1.4rem]">
+                    <Link href={cotizacionHref} className="bg-gbc-cyan hover:bg-gbc-steel active:bg-gbc-steel text-white flex py-2 text-[1.3rem] rounded-xl font-semibold justify-center items-center gap-[2vw] md:w-fit md:px-4 md:gap-3 xl:text-[1.4rem]">
 
                         <MdEmail className="size-7" />
                         Solicitar cotización

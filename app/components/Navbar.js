@@ -54,6 +54,29 @@ export default function Navbar() {
         setIsOpen(false);
     }
 
+    function handleLinkClick(event, href) {
+        closeMenu();
+
+        if (href !== "/#contacto" || pathname !== "/") return;
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+
+        const contacto = document.getElementById("contacto");
+        if (!contacto) return;
+
+        event.preventDefault();
+        if (window.location.hash !== "#contacto") {
+            window.history.pushState(null, "", "/#contacto");
+        }
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                contacto.scrollIntoView({
+                    behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth",
+                    block: "start",
+                });
+            });
+        });
+    }
+
     useEffect(() => {
         if (!isOpen) return;
 
@@ -97,7 +120,7 @@ export default function Navbar() {
                             key={label}
                             className={`px-3 py-1 transition-colors hover:bg-gbc-sky hover:text-gbc-navy rounded-lg`}
                         >
-                            <Link href={href} className="text-[1.2rem]!">
+                            <Link href={href} className="text-[1.2rem]!" onClick={(event) => handleLinkClick(event, href)}>
                                 {label}
                             </Link>
                         </li>
@@ -153,7 +176,7 @@ export default function Navbar() {
                                 <Link
                                     className="transition-opacity hover:opacity-75 text-[clamp(1.8rem,8vw,2.5rem)]! sm:text-[2.5rem]!"
                                     href={href}
-                                    onClick={closeMenu}
+                                    onClick={(event) => handleLinkClick(event, href)}
                                 >{label}</Link>
                             </li>
                         ))}
