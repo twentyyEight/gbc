@@ -4,47 +4,47 @@
     "services": [
       {
         "name": "Inspección de hélices, timones y sistemas de propulsión",
-        "img": ""
+        "img": "/servicios/rov/inspeccion-helice-submarino.png"
       },
       {
         "name": "Inspección de cascos de embarcaciones.",
-        "img": ""
+        "img": "/servicios/rov/inspeccion-casco-embarcaciones.jpg"
       },
       {
         "name": "Búsqueda y recuperación de objetos sumergidos",
-        "img": "/servicios/recuperacion-objetos-rov.jfif"
+        "img": "/servicios/rov/recuperacion-objetos-rov.jfif"
       },
       {
         "name": "Dragado fondos",
-        "img": ""
+        "img": "/servicios/rov/dragado-fondos-rov.jfif"
       },
       {
         "name": "Dragado de lodos",
-        "img": "/servicios/dragado-bio-reactor.PNG"
+        "img": "/servicios/rov/dragado-bio-reactor.PNG"
       },
       {
         "name": "Recuperación en piscinas con aguas de proceso",
-        "img": ""
+        "img": "/servicios/rov/piscinas-aguas-proceso.jfif"
       },
       {
         "name": "Muestra de fondo",
-        "img": "/servicios/toma-muestras-submarinas.jpg"
+        "img": "/servicios/rov/toma-muestras-submarinas.jpg"
       },
       {
         "name": "Muestras de sedimento, fango",
-        "img": ""
+        "img": "/servicios/rov/muestras-sedimento-fango.jfif"
       },
       {
         "name": "Fotografía y filmación submarina",
-        "img": "/servicios/fotografia-filmacion-submarina.jpg"
+        "img": "/servicios/rov/filmacion-fotografia.jfif"
       },
       {
         "name": "Búsqueda de personas",
-        "img": ""
+        "img": "/servicios/rov/busquedas-personas-rov.jfif"
       },
       {
         "name": "Batimetría",
-        "img": ""
+        "img": "/servicios/rov/batimetria.jfif"
       }
     ]
   },
@@ -53,43 +53,43 @@
     "services": [
       {
         "name": "Inspección de cadenas y sistemas de fondeo.",
-        "img": ""
+        "img": "/servicios/buceo/inspeccion-cadenas.jfif"
       },
       {
         "name": "Inspección de emisarios submarinos.",
-        "img": ""
+        "img": "/servicios/buceo/inspeccion-emisario-submarino.png"
       },
       {
         "name": "Recuperación de equipos sumergidos.",
-        "img": ""
+        "img": "/servicios/buceo/recuperacion-objetos-buceo.jfif"
       },
       {
         "name": "Búsqueda de elementos perdidos.",
-        "img": "/servicios/recuperacion-objetos-buceo.jfif"
+        "img": "/servicios/buceo/busqueda-elementos-perdidos.JPG"
       },
       {
         "name": "Instalación de sistemas de fondeo",
-        "img": ""
+        "img": "/servicios/buceo/instalacion-sistema-fondeo.jfif"
       },
       {
         "name": "Inspección de líneas de fondeo",
-        "img": ""
+        "img": "/servicios/buceo/inspeccion-lineas-fondeo.jfif"
       },
       {
         "name": "Mantenimiento e inspección de pilotes",
-        "img": ""
+        "img": "/servicios/buceo/mantenimiento-inspeccion-pilotes.jfif"
       },
       {
         "name": "Medición de espesores",
-        "img": "/servicios/medicion-espesores.jfif"
+        "img": "/servicios/buceo/medicion-espesores.jfif"
       },
       {
         "name": "Mantenimiento de defensas",
-        "img": ""
+        "img": "/servicios/buceo/mantencion-defensas.jfif"
       },
       {
         "name": "Mantenimiento e instalación de infraestructura portuaria",
-        "img": ""
+        "img": "/servicios/buceo/mantenimiento-instalacion-infraestructura-portuaria.jfif"
       },
       {
         "name": "Corte y soldadura submarina",
@@ -97,27 +97,27 @@
       },
       {
         "name": "Protección catódica",
-        "img": ""
+        "img": "/servicios/buceo/proteccion-catodica.jfif"
       },
       {
         "name": "Defensa de enrocados",
-        "img": ""
+        "img": "/servicios/buceo/defensa-enroscados.jfif"
       },
       {
         "name": "Protección de aducciones",
-        "img": ""
+        "img": "/servicios/buceo/proteccion-aducciones.jfif"
       },
       {
         "name": "Reparación de maniobras de fondeo",
-        "img": ""
+        "img": "/servicios/buceo/reparacion-fondeo.jfif"
       },
       {
         "name": "Buceo en aguas contaminadas",
-        "img": ""
+        "img": "/servicios/buceo/buceo-aguas-contaminadas.PNG"
       },
       {
         "name": "Buceo en plantas de tratamiento de aguas servidas",
-        "img": "/servicios/retiro-mixer-2.PNG"
+        "img": "/servicios/buceo/retiro-mixer-2.PNG"
       }
     ]
   }

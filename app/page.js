@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import Button from "./components/Button";
+import NavigationLink from "./components/NavigationLink";
 import ServiceCarousel from "./components/servicios/ServiceCarousel";
 import ServiceCard from "./components/servicios/ServiceCard";
 import ExperienciaTimeline from "./components/experiencia/ExperienciaTimeline";
@@ -29,7 +30,7 @@ const ultimasExperiencias = experiencias
 export default function Home() {
     const [type, setType] = useState("rov");
     const filteredServices = (servicios.find((group) => group.type === type)?.services ?? []).slice(0, type === "rov" ? 3 : 6);
-    
+
     return (
         <main className="grid gap-20 sm:gap-24 xl:gap-32">
 
@@ -46,7 +47,7 @@ export default function Home() {
 
                         <Link className="w-full lg:w-full lg:px-0 rounded-sm bg-gbc-cyan hover:bg-gbc-steel active:bg-gbc-steel py-2 transition-colors" href="/servicios">Ver servicios</Link>
 
-                        <Link className="w-full lg:w-full lg:px-0 rounded-sm bg-gbc-blue hover:bg-gbc-navy active:bg-gbc-navy py-2  transition-colors" href="/#contacto">Cotizar servicio</Link>
+                        <NavigationLink className="w-full lg:w-full lg:px-0 rounded-sm bg-gbc-blue hover:bg-gbc-navy active:bg-gbc-navy py-2  transition-colors" href="/#contacto">Cotizar servicio</NavigationLink>
                     </div>
                 </div>
 

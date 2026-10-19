@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import NavigationLink from "./NavigationLink";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { IoMenu, IoClose } from "react-icons/io5";
@@ -54,29 +55,6 @@ export default function Navbar() {
         setIsOpen(false);
     }
 
-    function handleLinkClick(event, href) {
-        closeMenu();
-
-        if (href !== "/#contacto" || pathname !== "/") return;
-        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-
-        const contacto = document.getElementById("contacto");
-        if (!contacto) return;
-
-        event.preventDefault();
-        if (window.location.hash !== "#contacto") {
-            window.history.pushState(null, "", "/#contacto");
-        }
-        requestAnimationFrame(() => {
-            requestAnimationFrame(() => {
-                contacto.scrollIntoView({
-                    behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth",
-                    block: "start",
-                });
-            });
-        });
-    }
-
     useEffect(() => {
         if (!isOpen) return;
 
@@ -120,9 +98,9 @@ export default function Navbar() {
                             key={label}
                             className={`px-3 py-1 transition-colors hover:bg-gbc-sky hover:text-gbc-navy rounded-lg`}
                         >
-                            <Link href={href} className="text-[1.2rem]!" onClick={(event) => handleLinkClick(event, href)}>
+                            <NavigationLink href={href} className="text-[1.2rem]!" onClick={closeMenu}>
                                 {label}
-                            </Link>
+                            </NavigationLink>
                         </li>
                     ))}
 
@@ -173,11 +151,11 @@ export default function Navbar() {
                         {links.map(([label, href]) => (
 
                             <li key={label}>
-                                <Link
+                                <NavigationLink
                                     className="transition-opacity hover:opacity-75 text-[clamp(1.8rem,8vw,2.5rem)]! sm:text-[2.5rem]!"
                                     href={href}
-                                    onClick={(event) => handleLinkClick(event, href)}
-                                >{label}</Link>
+                                    onClick={closeMenu}
+                                >{label}</NavigationLink>
                             </li>
                         ))}
 

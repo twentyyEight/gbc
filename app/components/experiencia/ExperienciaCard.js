@@ -7,17 +7,6 @@ export default function ExperienciaCard({ img, mes, empresas, trabajos = [], ubi
 
     return (
         <article className="flex w-full min-w-0 flex-col gap-3 lg:flex-row lg:items-start lg:gap-8">
-            <div className="relative aspect-video w-full shrink-0 overflow-hidden rounded-lg bg-[#d9d9d9] lg:order-last lg:w-[42%]">
-                {img && img !== "/" && (
-                    <Image
-                        src={img}
-                        alt={`Trabajo realizado${nombresEmpresas ? ` para ${nombresEmpresas}` : ""}${ubicacion ? ` en ${ubicacion}` : ""}`}
-                        fill
-                        sizes="(min-width: 1024px) 42vw, 100vw"
-                        className="object-cover"
-                    />
-                )}
-            </div>
 
             <div className="min-w-0 flex-1 text-left">
                 <h3 className="text-[1.3rem] font-semibold uppercase leading-tight text-gbc-blue lg:text-[1.7rem]">

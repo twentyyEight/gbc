@@ -10,7 +10,7 @@ const categorias = [
 
 export default function Servicios() {
     return (
-        <main className="relative isolate pb-12 before:absolute before:inset-y-0 before:-inset-x-5 before:-z-10 before:bg-[#f3f6f7] before:content-[''] md:before:-inset-x-12 xl:before:-inset-x-20">
+        <main className="relative isolate pb-12 before:absolute before:inset-y-0 before:-inset-x-5 before:-z-10 before:content-[''] md:before:-inset-x-12 xl:before:-inset-x-20">
             <Header
                 titulo="NUESTROS SERVICIOS"
                 subtitulo="Descubre nuestra amplia variedad de servicios, organizados según la modalidad en que se realiza cada operación, y encuentra la solución adecuada para cada proyecto."

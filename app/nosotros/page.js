@@ -37,7 +37,15 @@ export default function Nosotros() {
                         </div>
                     </div>
 
-                    <div className="aspect-square w-full rounded-lg bg-[#d9d9d9] lg:w-[34%] lg:shrink-0 lg:self-center" aria-hidden="true"></div>
+                    <div className="relative aspect-square w-full overflow-hidden rounded-lg lg:w-[34%] lg:shrink-0">
+                        <Image
+                            src="/nosotros/nosotros.png"
+                            alt="Grupo Buzos Comerciales"
+                            fill
+                            sizes="(min-width: 1024px) 34vw, 100vw"
+                            className="object-cover object-top"
+                        />
+                    </div>
                 </div>
 
                 <div className="my-12 grid grid-cols-1 items-center gap-5 lg:my-16 lg:grid-cols-[1fr_1.15fr_1fr] lg:gap-10">
