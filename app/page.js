@@ -160,7 +160,7 @@ export default function Home() {
                 <h2>UN POCO DE NUESTRO TRABAJO</h2>
                 <ExperienciaTimeline experiencias={ultimasExperiencias} etiqueta="year" />
                 <div className="mt-7 flex justify-center">
-                    <Button href="/experiencias" color="cyan">Ver más trabajos</Button>
+                    <Button href="/nosotros#experiencias" color="cyan">Ver más trabajos</Button>
                 </div>
             </section>
 

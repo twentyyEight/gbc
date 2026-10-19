@@ -39,7 +39,7 @@ export default function Nosotros() {
 
                     <div className="relative aspect-square w-full overflow-hidden rounded-lg lg:w-[34%] lg:shrink-0">
                         <Image
-                            src="/nosotros/nosotros.png"
+                            src="/nosotros/gbc-fundadores.jpg"
                             alt="Grupo Buzos Comerciales"
                             fill
                             sizes="(min-width: 1024px) 34vw, 100vw"
@@ -104,7 +104,7 @@ export default function Nosotros() {
             </section>
 
             {/* Experiencia */}
-            <section className="mx-auto w-full max-w-6xl min-w-0" aria-label="Experiencias por año">
+            <section id="experiencias" className="mx-auto w-full max-w-6xl min-w-0" aria-label="Experiencias por año">
                 <h2>NUESTRA EXPERIENCIA</h2>
                 <p className="mb-8 text-center text-neutral-500">Descubre los proyectos y servicios que hemos realizado durante nuestra trayectoria, reflejo de nuestra experiencia y compromiso en cada desafío bajo el agua.</p>
                 <div className="flex flex-col lg:grid lg:grid-cols-5 lg:gap-x-2">

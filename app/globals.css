@@ -17,7 +17,8 @@ html {
   scroll-behavior: smooth;
 }
 
-#contacto {
+#contacto,
+#experiencias {
   scroll-margin-top: 6rem;
 }
 
