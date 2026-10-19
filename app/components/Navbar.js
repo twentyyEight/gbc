@@ -123,6 +123,7 @@ export default function Navbar() {
                 type="button"
                 aria-label="Abrir menú"
                 aria-expanded={isOpen}
+                aria-controls="mobile-navigation"
                 onClick={() => setIsOpen(true)}
             >
                 <IoMenu className="w-12 h-auto" />
@@ -130,8 +131,10 @@ export default function Navbar() {
             </div>
 
             <div
-                className={`${isOpen ? "transform-[translateY(0)]" : "transform-[translateY(-100%)]"} fixed inset-0 flex flex-col items-center justify-center overflow-y-auto bg-gbc-blue px-5 py-6 text-white h-vh min-w-[320px] transition-transform duration-300 ease-in-out motion-reduce:transition-none md:hidden`}
+                id="mobile-navigation"
+                className={`${isOpen ? "visible translate-y-0" : "invisible -translate-y-full pointer-events-none"} fixed inset-0 z-10 flex h-dvh flex-col items-center justify-center overflow-y-auto bg-gbc-blue px-5 py-6 text-white min-w-[320px] transition-[translate,visibility] duration-300 ease-in-out motion-reduce:transition-none md:hidden`}
                 inert={!isOpen}
+                aria-hidden={!isOpen}
                 aria-label="Menú de navegación"
             >
                 <button
